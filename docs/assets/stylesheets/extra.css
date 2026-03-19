@@ -1,0 +1,48 @@
+:root {
+  --vdc-ink: #111111;
+  --vdc-sand: #f3eee6;
+  --vdc-accent: #d97706;
+  --vdc-muted: #5f5f5f;
+}
+
+.md-main {
+  background:
+    radial-gradient(circle at top right, rgba(217, 119, 6, 0.12), transparent 26%),
+    linear-gradient(180deg, #fffaf4 0%, #ffffff 36%);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1.5rem 0 2rem;
+}
+
+.hero-card {
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 18px;
+  padding: 1rem 1.1rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 16px 36px rgba(17, 17, 17, 0.06);
+}
+
+.hero-card h3 {
+  margin-top: 0;
+  color: var(--vdc-ink);
+}
+
+.hero-card p {
+  margin-bottom: 0;
+  color: var(--vdc-muted);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: -0.02em;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: rgba(17, 17, 17, 0.04);
+}
+

@@ -1,0 +1,94 @@
+site_name: Vehicle Dynamics and Control Portfolio
+site_description: Vehicle Dynamics and Control 기반 학습/번역/구현 포트폴리오
+site_url: https://sturgeon03.github.io/vehicle-dynamics-portfolio/
+repo_url: https://github.com/sturgeon03/vehicle-dynamics-portfolio
+repo_name: sturgeon03/vehicle-dynamics-portfolio
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: ko
+  font:
+    text: Noto Sans KR
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: black
+      accent: amber
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Roadmap: roadmap.md
+  - Workflow:
+      - Study Workflow: operations/workflow.md
+      - Multi-Agent Ops: operations/multi-agent.md
+  - Chapter Atlas:
+      - Overview: chapter-atlas.md
+      - Chapters:
+          - 01 Introduction: chapters/01-introduction.md
+          - 02 Lateral Vehicle Dynamics: chapters/02-lateral-vehicle-dynamics.md
+          - 03 Steering Control for Automated Lane Keeping: chapters/03-steering-control-for-automated-lane-keeping.md
+          - 04 Longitudinal Vehicle Dynamics: chapters/04-longitudinal-vehicle-dynamics.md
+          - 05 Introduction to Longitudinal Control: chapters/05-introduction-to-longitudinal-control.md
+          - 06 Adaptive Cruise Control: chapters/06-adaptive-cruise-control.md
+          - 07 Longitudinal Control for Vehicle Platoons: chapters/07-longitudinal-control-for-vehicle-platoons.md
+          - 08 Electronic Stability Control: chapters/08-electronic-stability-control.md
+          - 09 Mean Value Modeling of SI and Diesel Engines: chapters/09-mean-value-modeling-of-si-and-diesel-engines.md
+          - 10 Design and Analysis of Passive Automotive Suspensions: chapters/10-design-and-analysis-of-passive-automotive-suspensions.md
+          - 11 Active Automotive Suspensions: chapters/11-active-automotive-suspensions.md
+          - 12 Semi-Active Suspensions: chapters/12-semi-active-suspensions.md
+          - 13 Lateral and Longitudinal Tire Forces: chapters/13-lateral-and-longitudinal-tire-forces.md
+          - 14 Tire-Road Friction Measurement on Highway Vehicles: chapters/14-tire-road-friction-measurement-on-highway-vehicles.md
+          - 15 Roll Dynamics and Rollover Prevention: chapters/15-roll-dynamics-and-rollover-prevention.md
+          - 16 Dynamics and Control of Hybrid Gas Electric Vehicles: chapters/16-dynamics-and-control-of-hybrid-gas-electric-vehicles.md
+  - Theme Tracks:
+      - Overview: theme-tracks.md
+      - Foundation: tracks/foundation.md
+      - Track A: tracks/track-a-lateral-lane-keeping.md
+      - Track B: tracks/track-b-longitudinal-automation.md
+      - Track C: tracks/track-c-esc-tire-friction.md
+      - Track D: tracks/track-d-suspension-rollover.md
+      - Track E: tracks/track-e-engine-hybrid.md
+  - Glossary: glossary/index.md
+  - Simulations: simulations/index.md
+  - Essays: essays/index.md
