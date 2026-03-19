@@ -11,4 +11,8 @@
 | cornering stiffness | 코너링 강성 | tire force modeling |
 | string stability | 스트링 안정성 | ACC / platooning |
 | rollover | 전복 | roll dynamics |
-
+| adaptive cruise control | 적응형 크루즈 컨트롤 | longitudinal control |
+| automated highway systems | 자동화 고속도로 시스템 | traffic congestion research |
+| intelligent transportation systems | 지능형 교통 시스템 | control + sensing + communication |
+| hybrid electric vehicle | 하이브리드 전기차 | HEV |
+| fuel cell vehicle | 연료전지 차량 | FCV |
